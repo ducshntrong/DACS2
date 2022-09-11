@@ -246,7 +246,7 @@ if ($product == null) {
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="shop__product__option__right">
-                                <p>Price:</p>
+                                <p>Sort by Price:</p>
                                 <select>
                                     <option value="">Low To High</option>
                                     <option value="">$0 - $55</option>
