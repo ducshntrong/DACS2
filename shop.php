@@ -246,7 +246,7 @@ if ($product == null) {
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="shop__product__option__right">
-                                <p>Sort by Price:</p>
+                                <p>Price:</p>
                                 <select>
                                     <option value="">Low To High</option>
                                     <option value="">$0 - $55</option>
@@ -301,7 +301,7 @@ if ($product == null) {
                         <i class="fa fa-star-o"></i>
                         <i class="fa fa-star-o"></i>
                     </div>
-                    <h5>' . number_format($row['price'], '2', '.', '.') . '$</h5>
+                    <h5>' . number_format($row['price'], '2', '.', '.') . 'đ</h5>
                     <div class="product__color__select">
                         <label for="pc-4">
                             <input type="radio" id="pc-4" />
