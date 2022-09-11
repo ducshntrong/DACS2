@@ -47,6 +47,7 @@ if ($product == null) {
 ?>
 
 
+
 <!-- Breadcrumb Section Begin -->
 <section class="breadcrumb-option">
     <div class="container">
@@ -300,7 +301,7 @@ if ($product == null) {
                         <i class="fa fa-star-o"></i>
                         <i class="fa fa-star-o"></i>
                     </div>
-                    <h5>$' . number_format($row['price'], '2', '.', '.') . '</h5>
+                    <h5>' . number_format($row['price'], '2', '.', '.') . '$</h5>
                     <div class="product__color__select">
                         <label for="pc-4">
                             <input type="radio" id="pc-4" />
@@ -353,36 +354,36 @@ if ($product == null) {
 "></script>
 
 <script type="text/javascript">
-function addToCart(id) {
-    $.post('./api/cookie.php', {
-        'action': 'add',
-        'id': id,
-        'num': 1,
-    }, function(data) {
+    function addToCart(id) {
+        $.post('./api/cookie.php', {
+            'action': 'add',
+            'id': id,
+            'num': 1,
+        }, function(data) {
 
-        location.reload();
-    });
-}
+            location.reload();
+        });
+    }
 </script>
 
 <script>
-$(document).ready(function() {
-    $('#search_text').keyup(function() {
-        var txt = $(this).val();
-        $('#result').html('');
-        $.ajax({
-            url: "layout/fetch.php",
-            method: "post",
-            data: {
-                search: txt
-            },
-            dataType: "text",
-            success: function(data) {
-                $('#result').html(data);
-            }
-        })
+    $(document).ready(function() {
+        $('#search_text').keyup(function() {
+            var txt = $(this).val();
+            $('#result').html('');
+            $.ajax({
+                url: "layout/fetch.php",
+                method: "post",
+                data: {
+                    search: txt
+                },
+                dataType: "text",
+                success: function(data) {
+                    $('#result').html(data);
+                }
+            })
+        });
     });
-});
 </script>
 
 
