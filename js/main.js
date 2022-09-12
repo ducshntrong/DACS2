@@ -31,6 +31,16 @@
         }
     });
 
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            if($(this).scrollTop()){
+                $('.button-circle-div').fadeIn();
+            } else{
+                $('.button-circle-div').fadeOut();
+            }
+        });
+    });
+
     /*------------------
         Background Set
     --------------------*/

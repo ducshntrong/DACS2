@@ -22,6 +22,8 @@
         <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css" />
         <link rel="stylesheet" href="css/slicknav.min.css" type="text/css" />
         <link rel="stylesheet" href="css/style.css" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+	    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.3.15/slick.css"/>
     </head>
 
     <body>
@@ -62,6 +64,11 @@
 
         <!-- Header Section Begin -->
         <header class="header">
+        <div class="button-circle-div">
+            <a href="#top" class="button-circle">
+                <i class="fa-solid fa-angle-up"></i>
+            </a>
+        </div>
             <div class="header__top">
                 <div class="container">
                     <div class="row">

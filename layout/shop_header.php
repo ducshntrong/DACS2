@@ -6,6 +6,8 @@
         <meta name="description" content="Male_Fashion Template" />
         <meta name="keywords" content="Male_Fashion, unica, creative, html" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+	    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.3.15/slick.css"/>
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Fashion Shop</title>
 
@@ -62,6 +64,11 @@
 
         <!-- Header Section Begin -->
         <header class="header">
+        <div class="button-circle-div">
+            <a href="#top" class="button-circle">
+                <i class="fa-solid fa-angle-up"></i>
+            </a>
+        </div>
             <div class="header__top">
                 <div class="container">
                     <div class="row">
