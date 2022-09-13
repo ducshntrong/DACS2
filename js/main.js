@@ -40,7 +40,49 @@
             }
         });
     });
-
+    $(document).ready(function() {
+        $('#btn-login').click(function(e) {
+            $('.modal').css('display', 'flex')
+            $('.modal__overlay').css('display', 'block')
+            $('#popup-signin').css('display', 'block')
+        })
+        $('.btn-back-signin').click(function(){
+            $('.modal').css('display', 'none')
+            $('.modal__overlay').css('display', 'none')
+            $('#popup-signin').css('display', 'none')
+        })
+        $('.btn-back-register').click(function(){
+            $('.modal').css('display', 'flex')
+            $('.modal__overlay').css('display', 'block')
+            $('#popup-signin').css('display', 'block')
+            $('#popup-register').css('display', 'none')
+        })
+        $('.close-form').click(function(){
+            $('.modal').css('display', 'none')
+            $('.modal__overlay').css('display', 'none')
+            $('#popup-signin').css('display', 'none')
+            $('#popup-register').css('display', 'none')
+        })
+        $('.modal__overlay').click(function(){
+            $('.modal').css('display', 'none')
+            $('.modal__overlay').css('display', 'none')
+            $('#popup-signin').css('display', 'none')
+            $('#popup-register').css('display', 'none')
+        })
+        $('#btn-register').click(function() {
+            $('.modal').css('display', 'flex')
+            $('#popup-signin').css('display', 'none')
+            $('.modal__overlay').css('display', 'block')
+            $('#popup-register').css('display', 'block')
+        })
+        $('#btn-signin').click(function() {
+            $('.modal').css('display', 'flex')
+            $('#popup-signin').css('display', 'block')
+            $('.modal__overlay').css('display', 'block')
+            $('#popup-register').css('display', 'none')
+        })
+    })
+    
     /*------------------
         Background Set
     --------------------*/
